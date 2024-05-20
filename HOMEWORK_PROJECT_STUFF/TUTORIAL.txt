@@ -1,0 +1,34 @@
+Et asi oleks lihtsam siis sai projekti asjad liigutatud siia samusesse kausta kus oli tunni prax.
+Eraldatud 'HOMEWORK_PROJECT_STUFF', et midagi umbe ei jookseks.
+
+Kui jooksutada 'python3 request_data.py' 
+käsurealt (õiges directories, 'HOMEWORK_PROJECT_STUFF'), siis käiakse andmeid toomas avaandmetest.
+Vastus kirjutatakse csv-sse ning seejärel transformitakse parquetiks. Mõningane loogika ka seal
+transformi käigus.
+
+Edasi, et supersetis teha päringut, siis vist tunniloogikaga kokkuminevalt kasuta 
+SELECT * FROM read_parquet('/data/HOMEWORK_PROJECT_STUFF/parquet_hw/*.parquet') 
+ning tee misiganes maagiat.
+
+Kõik selle projektiga seonduv on nüüdsest 'HOMEWORK_PROJECT_STUFF' kaustas!!!
+
+PS! 
+Kui tundub, et konteiner ei tööta 
+1. kasuta 'docker ps'. Näitab sulle kõik JOOKSVAD/KÄIMAS konteinerid
+2. tulemuses puudub 'superset' container?
+3. kasuta 'docker ps -a'. Näitab sulle absoluutselt kõik konteinerid. Töötavad ning suletud konteinerid
+4. leia container ID mis on 'superset' oma.
+5. kdocker start <ID> 
+
+
+Kui tundub, et avaandmetest päring ei tagasta midagi
+1.Veendu, et ei too midagi. Vaata, mis on csv faili sisu, mis kirjutatakse päringu korral.
+2. Kontrolli, kas on päringus ette antud urlil õige ID (kõikse tagumine UUID väli).
+näiteks külasta seda ja otsi 'file' ning seal listis esimene file ja selle id 
+https://avaandmed.eesti.ee/api/datasets/slug/toetuste-ja-huvitistega-kaetus
+3. Kui on vale id siis vaheta välja lihtsalt.
+
+
+
+
+

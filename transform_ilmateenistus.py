@@ -1,7 +1,7 @@
 import pandas as pd
 
 # read in data from excel (required openpyxl)
-df = pd.read_excel('ilmateenistus/Tartu-Toravere-2004-2023_modified_24.04.11.xlsx', decimal=',')
+df = pd.read_excel('ilmateenistus/Tartu-Toravere-2004-2023.xlsx', decimal=',')
 
 # rename date related columns (not really needed, but did it anyway)
 df = df.rename(columns={'Aasta': 'year', 'Kuu': 'month', 'Päev': 'day', 'Kell (UTC)': 'time'})
@@ -12,4 +12,4 @@ df = df.drop(columns=['year', 'month', 'day', 'time'])
 
 
 # export to parquet
-df.to_parquet('ilmateenistus/Tartu-Toravere-2004-2023_modified_24.04.11.parquet', index=False)
+df.to_parquet('ilmateenistus/Tartu-Toravere-2004-2023.parquet', index=False)
