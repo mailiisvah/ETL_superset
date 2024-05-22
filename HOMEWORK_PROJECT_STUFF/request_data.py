@@ -23,7 +23,7 @@ df = pd.read_csv('csv_hw/unemployed_data_exported.csv', encoding='utf-8')
 
 # Convert the 'Kuupäev' column to Date format
 df['Kuupäev'] = pd.to_datetime(df['Kuupäev'], format='%m/%d/%y')
-df = df[(df['Kuupäev'].dt.year >= 2020) & (df['Kuupäev'].dt.year <= 2021)]
+df = df[(df['Kuupäev'].dt.year >= 2004) & (df['Kuupäev'].dt.year <= 2023)]
 df['Kuupäev'] = df['Kuupäev'].dt.date
 
 df.to_parquet('parquet_hw/unemployed_data_exported.parquet')
