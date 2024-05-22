@@ -36,7 +36,7 @@ Apache Superset was used for creating interactive and insightful visualizations.
 - Apache Superset (Set up with docker)
 
 Clone my repository
-git clone <repository link>
+- git clone ´https://github.com/mailiisvah/ETL_superset´
 
 ### Build and run the Docker container
 - `docker run -d -v ${PWD}:/data:rw -p 8080:8088 -e "SUPERSET_SECRET_KEY=<super value>" --name superset my/superset:duckdb`
