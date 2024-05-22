@@ -5,7 +5,7 @@ The primary objective of this project was to implement an ETL (Extract, Transfor
 Data Sources
 The data for this project was sourced from the Estonian Open Data portal: https://avaandmed.eesti.ee/datasets/toetuste-ja-huvitistega-kaetus
 
-NB! If you are wondering why there are some airquality and weather files in the repository, then just ignore these. I just had some problems with the Docker and to make it easier I just put my HOMEWORK_PROJECT_STUFF in the same folder which consisted my practical lesson work. 
+NB! If you are wondering why there are some airquality and weather files in the repository, then just ignore these. I just had some problems with Docker and to make it easier I just put my HOMEWORK_PROJECT_STUFF in the same folder which consisted of my practical lesson work. 
 
 ## ETL Process
 1. Data Extraction:
