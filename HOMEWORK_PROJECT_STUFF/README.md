@@ -19,9 +19,9 @@ The dataset was downloaded as an Excel file and parsed as csv for initial prepro
 - Filtering Data: Data was filtered to include only records from the years 2004 and 2023. Especially wanted to look into the years 2020 and 2021, as these years were significantly impacted by the COVID-19 pandemic.
 - Creating Parquet File: The cleaned and transformed data (unemployed_data_exported.csv) was then saved as a Parquet file (unemployed_data_exported.parquet) for efficient storage and retrieval. 
 
-3. Data Load/Visualization
+3. Data Load/Visualization 
 Apache Superset was used for creating interactive and insightful visualizations. 
-- Four key visualizations were created. 
+- Four key visualizations were created (dashboard_export.zip): 
     1. Monthly Registered Unemployed (2004-2023).
     2. Type of Benefit or Allowance by Percentage Over the Years 2004-2023
     3. Type of Benefit or Allowance by Percentage Over the Years 2020-2021
