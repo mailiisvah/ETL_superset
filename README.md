@@ -26,6 +26,7 @@ Apache Superset was used for creating interactive and insightful visualizations.
     2. Type of Benefit or Allowance by Percentage Over the Years 2004-2023
     3. Type of Benefit or Allowance by Percentage Over the Years 2020-2021
     4. Monthly Registered Unemployed in 2020-2021 by Gender, Age Group, and County
+       
  Also some additional visualisations (dashboard_export_additional.zip).
 
 ## How to Use This Repository
